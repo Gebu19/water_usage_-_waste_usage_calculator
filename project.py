@@ -29,7 +29,7 @@ def water_usage_calculator():
    
     # Calculate water usage
     if st.button("Calculate"):
-        total = (showers_min*9)+(num_toilet*6)+(num_brush*1.5)+(dish_wash_min*12)+(num_laundry*80/7)+(watering_garden_min*15)
+        total = (showers_min*7.5)+(num_toilet*6)+(num_brush*1.5)+(dish_wash_min*12)+(num_laundry*80/7)+(watering_garden_min*15)
         st.subheader(f"\nTotal daily water usage: {total:.2f} liters")
         if total > 300:
             st.subheader("\nYour water usage is above average. Consider implementing water-saving measures.")
