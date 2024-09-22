@@ -19,7 +19,7 @@ def reset_number_input_waste():
 def water_usage_calculator():
     st.subheader("Water Usage Calculator")
     # User inputs
-    showers_min = st.number_input("Enter the number of minutes spent in the shower per day", min_value=0, value=0,key="showers_min")
+    showers_min = st.number_input("Enter the number of minutes water spent in the shower per day", min_value=0, value=0,key="showers_min")
     num_toilet = st.number_input("Enter the number of toilet flushes per day",min_value=0, value=0,key="num_toilet")
     num_brush = st.number_input("Enter the number of times you brush your teeth per day",min_value=0, value=0,key="num_brush")
     dish_wash_min = st.number_input("Enter the number of minutes spent hand-washing dishes per day",min_value=0,value=0,key="dish_wash_min")
@@ -40,7 +40,6 @@ def water_usage_calculator():
         st.write("Install water-saving fixtures: Use low-flow showerheads and faucets.")
         st.write("Take shorter showers: Reduce your shower time to save water.")
         st.write("Turn off the tap: Don’t let the water run while brushing your teeth or washing dishes.")
-        st.write("Use a broom: Sweep driveways and sidewalks instead of hosing them down.")
         st.write("Collect rainwater: Use it to water your garden or wash your car.")
         st.write("Only run full loads: Use your dishwasher and washing machine with full loads only.")
     button = st.button("Reset", on_click=reset_number_input_water)
@@ -73,7 +72,6 @@ def waste_reduction_and_recycling():
         st.write("Reduce: Avoid single-use products and choose reusable items.")
         st.write("Reuse: Find new uses for items instead of discarding them.")
         st.write("Recycle: Sort your waste properly to maximize recycling.")
-        st.write("Compost: Compost organic waste to reduce landfill contributions.")
         st.write("Buy in bulk: Reduce packaging waste by buying in larger quantities.")
         st.write("Repair: Fix broken items instead of buying new ones.")
     button = st.button("Reset", on_click=reset_number_input_waste)
@@ -86,7 +84,7 @@ def main():
     
     if options == "Water Usage Calculator":
         water_usage_calculator()
-    elif options == "Waste Reduction and Recycling":
+    elif options == "Waste Reduction and Recycling Calculator":
         waste_reduction_and_recycling()
 
 if __name__ == "__main__":
