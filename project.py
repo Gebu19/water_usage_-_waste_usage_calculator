@@ -47,7 +47,7 @@ def water_usage_calculator():
 
 
 def waste_reduction_and_recycling():
-    st.header("Waste Reduction and Recycling")
+    st.header("Waste Usage Calculator")
 
     # User inputs
     plastic = st.number_input("Enter the amount of plastic waste generated (in kg)", min_value=0.0, value=0.0,step=0.1,format="%.1f",key="plastic")
