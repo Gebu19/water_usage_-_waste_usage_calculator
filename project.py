@@ -77,14 +77,14 @@ def waste_reduction_and_recycling():
     button = st.button("Reset", on_click=reset_number_input_waste)
 
 def main():
-    st.title("Water Usage and Waste Reduction App")
+    st.title("Water and Waste Usage App")
     
     st.sidebar.title("Navigation")
-    options = st.sidebar.radio("Choose a section", ["Water Usage Calculator", "Waste Reduction and Recycling"])
+    options = st.sidebar.radio("Choose a section", ["Water Usage Calculator", "Waste Usage Calculator"])
     
     if options == "Water Usage Calculator":
         water_usage_calculator()
-    elif options == "Waste Reduction and Recycling Calculator":
+    elif options == "Waste Usage Calculator":
         waste_reduction_and_recycling()
 
 if __name__ == "__main__":
